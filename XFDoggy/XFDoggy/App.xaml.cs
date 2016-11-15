@@ -11,12 +11,18 @@ namespace XFDoggy
 		{
 			InitializeComponent();
 
-			NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+			NavigationService.NavigateAsync("LoadingPage");
 		}
 
 		protected override void RegisterTypes()
 		{
 			Container.RegisterTypeForNavigation<MainPage>();
+			Container.RegisterTypeForNavigation<LoadingPage>();
+			Container.RegisterTypeForNavigation<LoginPage>();
+			Container.RegisterTypeForNavigation<NaviPage>();
+			Container.RegisterTypeForNavigation<MainMDPage>();
+			Container.RegisterTypeForNavigation<TravelExpensesListPage>();
+			Container.RegisterTypeForNavigation<TravelExpensesPage>();
 		}
 	}
 }
